@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 20px;
+}
+
+body {
+	padding-top: 1.5rem;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.container {
+	width: 20rem;
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.inputDiv {
+	width: 18rem;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid gray;
+}
+
+#input {
+	border: none;
+	outline: none;
+	padding: 0rem 0.25rem;
+}
+
+#add__button {
+	padding: 0.5rem 1rem;
+	font-size: 0.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: green;
+	cursor: pointer;
+}
+
+.task__container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#edit__button {
+	flex: 1;
+	padding: 0.25rem 0.5rem;
+	font-size: 0.5rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	background-color: rgb(223, 223, 126);
+	cursor: pointer;
+}
+
+#delete__button {
+	flex: 1;
+	padding: 0.25rem 0.5rem;
+	font-size: 0.5rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	background-color: red;
+	cursor: pointer;
+}
+
+.task {
+	padding: 0.25rem 0.25rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.5rem;
+	border: 1px solid lightgray;
+}
+
+.task__text {
+	flex: 3;
+}

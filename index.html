@@ -1,0 +1,39 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="inputDiv">
+				<input type="text" id="input" />
+				<button type="submit" id="add__button" onclick="addTask(event)">
+					add
+				</button>
+			</div>
+			<div class="filter">
+				<select name="filter" id="filter">
+					<option value="all">All</option>
+					<option value="completed">Completed</option>
+					<option value="incomplete">Incomplete</option>
+				</select>
+			</div>
+			<div class="task__container">
+				<div class="task">
+					<span class="task__text"> go to gym </span>
+					<button id="edit__button" onclick="editTask(event)">
+						edit
+					</button>
+					<button id="delete__button" onclick="deleteTask(event)">
+						delete
+					</button>
+				</div>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
